@@ -229,7 +229,7 @@ Hint: Use the String.prototype.split() method to separate the first and last
       names. You can split the string using ', ' as the separator.
       After splitting the names, rearrange them to the "First Last" format.
 */
-
+/*
 let firstLast = people.map(person => {
   let [last, first] = person.split(', ');
   return `${first} ${last}`;
@@ -281,9 +281,31 @@ console.log('Exercise 5 correct result: ', [
   'Tony Blair',
   'William Blake',
 ]);
-
+/*
 
 /*-------------------------------- Exersise 6 --------------------------------*/
+/*
+Exercise 6: Array.prototype.some()
+
+Determine if there is at least one person in the devs array who is 18 years 
+old or older.
+
+- You have an array of people with their respective ages.
+- Use the Array.prototype.some() method to check if any person in the array is 
+  18 years old or older.
+- Store the result (true or false) in the variable 'isAdultPresent'. 
+*/
+
+let isAdultPresent = devs.some(dev => (new Date().getFullYear() - dev.year) >= 18);
+
+
+
+// Check your work:
+console.log('Exercise 6 my result: ', isAdultPresent);
+console.log('Exercise 6 correct result: ', true);
+
+
+
 
 
 /*-------------------------------- Exersise 7 --------------------------------*/

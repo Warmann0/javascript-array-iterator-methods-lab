@@ -160,3 +160,4 @@ console.log('Exercise 2 correct result: ', [
   { first: 'Hanna', last: 'Hammarström' },
 ]);
 
+ 

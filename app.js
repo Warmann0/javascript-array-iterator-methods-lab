@@ -308,8 +308,8 @@ console.log('Exercise 6 correct result: ', true);
 
 
 
-/*-------------------------------- Exersise 7 --------------------------------*/
-/*
+/*-------------------------------- Exersise 7 --------------------------------
+
 Exercise 7: Array.prototype.every()
 
 Use Array.prototype.every() to determine if every person in the devs array is 
@@ -320,10 +320,10 @@ Use Array.prototype.every() to determine if every person in the devs array is
 - Use the Array.prototype.every() method to verify if every individual in the
   array is at least 19 years old.
 - Store the result (true or false) in the variable 'isEveryone19OrOlder'.
+*/
 
 
-
-let isEveryone19OrOlder = devs.some(dev => (new Date().getFullYear() - dev.year) <= 19);
+let isEveryone19OrOlder = devs.every(dev => (new Date().getFullYear() - dev.year) <= 19);
 // Complete the exercise in the space below:
 
 // Check your work:
